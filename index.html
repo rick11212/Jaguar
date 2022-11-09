@@ -5,9 +5,11 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<link rel="stylesheet" href="css/fonts.css">
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
 		<link rel="stylesheet" href="css/nullstyle.css">
 		<link rel="stylesheet" href="css/style.css">
 		<title>Робота в Словаччині на Jaguar Land Rover</title>
+		<script src='https://www.google.com/recaptcha/api.js'></script>
 	</head>
 	<body>
 		<div class="wrapper">
@@ -21,9 +23,9 @@
 							<button type="button" class="menu__icon icon-menu"><span></span></button>
 							<nav class="menu__body">
 								<ul class="menu__list">
-									<li class="menu__item"><a href="" class="menu__link">Залишити заявку!</a></li>
-									<li class="menu__item"><a href="" class="menu__link">Чому працювати на Jaguar?</a></li>
-									<li class="menu__item"><a href="" class="menu__link">Опис роботи </a></li>
+									<li class="menu__item"><a href="#shape" class="menu__link">Залишити заявку!</a></li>
+									<li class="menu__item"><a href="#cards" class="menu__link">Чому працювати на Jaguar?</a></li>
+									<li class="menu__item"><a href="#description" class="menu__link">Опис роботи </a></li>
 								</ul>
 							</nav>
 						</div>
@@ -38,7 +40,7 @@
 								<h1 class="jaguar__title title">Станьте частиною команди <span>Jaguar Land Rover</span></h1>
 								<div class="jaguar__buttons">
 									<div class="jaguar__button button">
-										<a class="button__link" href="">Хочу працювати</a>
+										<a class="button__link" href="#shape">Хочу працювати</a>
 									</div>
 									<div class="jaguar__button button-play">
 										<a class="button-play__link" href="https://www.youtube.com/watch?v=NEhsQ5lwHX8"><span></span> <p>Відео про завод</p></a>
@@ -55,7 +57,6 @@
 					<div class="main__job job">
 						<div class="job__row">
 							<div class="job__column">
-								<div class="job__title title">Jaguar Land Rover Slovakia</div>
 								<div class="job__text"><p>Робота в Словаччині на виробничій лінії, де виробництво відбувається відповідно високих стандартів якості та точно визначених процесів.</p><p>Пропонуємо роботу на повну зайнятість з оформленням напряму у компанії Jaguar Land Rover Slovakia.</p></div>
 							</div>
 							<div class="job__column">
@@ -64,16 +65,176 @@
 								</div>
 							</div>
 							<div class="job__button button">
-								<a class="button__link" href="">Детальний опис</a>
+								<a class="button__link" href="#description">Детальний опис</a>
 							</div>
 							<div class="job__decor-1"></div>
 							<div class="job__decor-2"></div>
 						</div>
 					</div>
+					<div id="cards" class="main__cards cards">
+						<div class="cards__row">
+							<div class="cards__column">
+								<div class="cards__item">
+									<div class="cards__icon">
+										<img src="img/icons/handshake-1.svg" alt="handshake">
+									</div>
+									<div class="cards__text">Договір на невизначений термін: одразу стаєте нашим співробітником. Пропонований пакет оплати включає основну фіксовану заробітну плату, надбавку, 13-та зарплата.</div>
+								</div>
+							</div>
+							<div class="cards__column">
+								<div class="cards__item">
+									<div class="cards__icon">
+										<img src="img/icons/dish.svg" alt="dish">
+									</div>
+									<div class="cards__text">Харчування лише 1€. Під час перерви ви можете відпочити, або підкріпитися.</div>
+								</div>
+							</div>
+							<div class="cards__column">
+								<div class="cards__item">
+									<div class="cards__icon">
+										<img src="img/icons/euro-1.svg" alt="euro">
+									</div>
+									<div class="cards__text">Розмір оплати надурочної роботи вищий, ніж передбачено законом.</div>
+								</div>
+							</div>
+							<div class="cards__column">
+								<div class="cards__item">
+									<div class="cards__icon">
+										<img src="img/icons/bus.svg" alt="bus">
+									</div>
+									<div class="cards__text">На місце роботи є можливість дістатись нашим автобусним транспортом, який курсує різними маршрутами з навшколишніх міст і сіл. </div>
+								</div>
+							</div>
+							<div class="cards__column">
+								<div class="cards__item">
+									<div class="cards__icon">
+										<img src="img/icons/sleeping.svg" alt="sleeping">
+									</div>
+									<div class="cards__text"> Якщо ви проживаєте на відстані більше ніж 70 кілометрів від Нітра, ви можете скористатись варіантами дешевого проживання біля заводу із зручним і безкоштовним транспортом до місця роботи.</div>
+								</div>
+							</div>
+							<div class="cards__column">
+								<div class="cards__item">
+									<div class="cards__icon">
+										<img src="img/icons/book.svg" alt="book">
+									</div>
+									<div class="cards__text">Для нас важливий ваш розвиток, тому ми пропонуємо освітні програми для навчання та кар’єрного росту.</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="main__slider slider">
+						<div class="slider__row">
+							<div class="slider__title title">Що подобається нашим працівникам?</div>
+							<div class="swiper__buttons">
+								<div class="swiper__button-prew"></div>
+								<div class="swiper__button-next"></div>
+							</div>
+						</div>
+						<div class="swiper">
+							<div class="swiper-wrapper">
+								<div class="swiper-slide">
+									<div class="swiper-slide__image">
+										<img src="img/1_UA.webp" alt="image">
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="swiper-slide__image">
+										<img src="img/2_UA.webp" alt="image">
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="swiper-slide__image">
+										<img src="img/3_UA.webp" alt="image">
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="swiper-slide__image">
+										<img src="img/4_UA.webp" alt="image">
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="swiper-slide__image">
+										<img src="img/5_UA.webp" alt="image">
+									</div>
+								</div>
+							</div>
+
+						</div>
+
+					</div>
+					<div id="description" class="main__description description">
+						<div class="description__subtitle">ОПИС РОБОТИ</div>
+						<div class="description__title title">ОПЕРАТОР/КА ВИРОБНИЦТВА</div>
+						<div class="description__pretitle title">ПОЧАТКОВА ЗАРОБІТНА ПЛАТА : <span>1276€*</span></div>
+						<div class="description__text">
+							<p>включає гарантовану тарифну заробітну плату в розмірі 1160 євро <br> + бонус за відвідуваність до 10% (максимум 116 євро) <br> …і ми гарантуємо підвищення заробітної плати під час наступних 6 років</p>
+						</div>
+						<div class="description__label">ШИРОКИЙ СПЕКТР ПЕРЕВАГ</div>
+						<ul class="description__list list">
+							<li class="description__item item">Безкоштовний автобусний транспорт або грошова надбавка на транспорт</li>
+							<li class="description__item item">Харчування лише за 1 євро</li>
+							<li class="description__item item">400 євро на рік у вигляді бонусів за вашим вибором</li>
+							<li class="description__item item">До 150 євро допомоги на відпочинок та навчання</li>
+							<li class="description__item item">Підвищені надбавки за понаднормову роботу у вихідні дні, у порівнянні з тим, що передбачено трудовим законодавством.</li>
+							<li class="description__item item">100% покриття страхування життя та від нещасних випадків, додаткові внески роботодавця у пенсійне накопичення</li>
+							<li class="description__item item">Iнші переваги офіціного працевлаштування, про які дізнаєтесь після реєстрації </li>
+						</ul>
+						<div class="description__label">МІСЦЕ ВИКОНАННЯ РОБОТИ: <span>місто Нітра</spa></div>
+						<div class="description__text-2">Ми забезпечуємо навчання та підтримку наших працівників, щоб ви знайшли роботу, якою будете пишатися.</div>
+						<div class="description__text-2">* усі суми в євро наведені до утримання податів та зборів</div>
+					</div>
+					<div class="main__other other">
+						<div class="other__title title">Також в нас є інші відкриті вакансії</div>
+						<ul class="other__list list">
+							<li class="other__item item">Працівник технічного обслуговування у кузовному відділі</li>
+							<li class="other__item item">Виправних дефектів у кузовному відділі</li>
+							<li class="other__item item">Працівник технічного обслуговування у монтажному відділі</li>
+							<li class="other__item item">Автоелектрик</li>
+							<li class="other__item item">Автомеханік</li>
+							<li class="other__item item">Виправних дефектів у фарбувальному відділі</li>
+							<li class="other__item item">Технік з’єднання</li>
+						</ul>
+					</div>
+					<div id="shape" class="main__form shape">
+						<div class="shape__image">
+							<img src="img/01.webp" alt="car">
+						</div>
+						<form class="form" action="mailto:nabir@robotajaguarlandrover.com.ua" method="post">
+							<div class="form__item">
+								<label class="form__label" for="name">Ім’я*</label>
+								<input id="name" required type="text" name="name" data-error="error" placeholder="Введіть ім'я" class="input">
+							</div>
+							<div class="form__item">
+								<label class="form__label" for="tel">Номер телефону* </label>
+								<input id="tel" required type="tel" name="tel" data-error="error" placeholder="Введіть номер телефону" maxlength="15" class="input">
+							</div>
+							<div class="form__item">
+								<label class="form__label" for="tel">E-mail </label>
+								<input id="email" type="email" name="email" data-error="error" placeholder="Введіть E-mail" class="input">
+							</div>
+							<div class="form__item">
+								<label class="form__label" for="captcha">*обов’язково до заповнення</label>
+								<!-- Для начала нам нужен серийный ключ от Google, ради которого переходим по https://www.google.com/recaptcha/about/ ссылке и регистрируемся, после чего привязываем сайт. -->
+								<div id="captcha" class="g-recaptcha" data-sitekey="0000000000000000000000"></div>
+							</div>
+							<div class="form__item">
+								<button type="submit" class="form__button">НАДІСЛАТИ</button>
+							</div>
+						</form>
+					</div>
 				</div>
 			</main>
 			<footer class="footer">
+				<div class="footer__container">
+					<div class="footer__image">
+						<img src="img/cropped-JLR-logo.webp" alt="logo">
+					</div>
+					<a class="footer__link" href="mailto:nabir@robotajaguarlandrover.com.ua">nabir@robotajaguarlandrover.com.ua</a>
+				</div>
 			</footer>
 		</div>
+		<script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+		<script src="js/script.js"></script>
 	</body>
 </html>
