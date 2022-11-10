@@ -1,4 +1,15 @@
 
+.iti__flag {
+	background-image: url("../img/flags.png");
+}
+
+@media (-webkit-min-device-pixel-ratio: 2),
+(min-resolution: 192dpi) {
+	.iti__flag {
+		background-image: url("../img/flags@2x.png");
+	}
+}
+/* ============================================================== */
 [class*="__container"] {
 	max-width: 1170px;
 	margin: 0px auto;
@@ -889,6 +900,7 @@ body {
 	display: flex;
 	flex-direction: column;
 	flex: 1 1 100%;
+	width: 100%;
 }
 
 .form__label{
@@ -901,6 +913,7 @@ body {
 	color: inherit;
 	border-radius: 10px;
 	border: 1px solid rgba(46, 139, 86, 0.3);
+	width: 100%;
 }
 .input:focus{
 	box-shadow: 0px 0px 20px rgba(46, 139, 86, 0.3);
@@ -960,6 +973,9 @@ body {
 	}
 	.shape__body{
 		row-gap: 30px;
+	}
+	.input::placeholder{
+		font-size: 14px;
 	}
 }
 /* =======================footer============================= */

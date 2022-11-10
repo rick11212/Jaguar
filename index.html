@@ -9,7 +9,9 @@
 		<link rel="stylesheet" href="css/nullstyle.css">
 		<link rel="stylesheet" href="css/style.css">
 		<title>Робота в Словаччині на Jaguar Land Rover</title>
+		<link rel="stylesheet" href="css/intlTelInput.css">
 		<script src='https://www.google.com/recaptcha/api.js'></script>
+		<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
 	</head>
 	<body>
 		<div class="wrapper">
@@ -217,14 +219,14 @@
 					<div id="shape" class="main__form shape">
 						<div class="shape__body">
 							<div class="shape__title">Залишайте заявку і ми передзвонимо Вам для реєстрації на роботу:</div>
-							<form class="form" action="mailto:nabir@robotajaguarlandrover.com.ua" method="post">
+							<form class="form" action="https://jsonplaceholder.typicode.com/posts" method="post">
 								<div class="form__item">
 									<label class="form__label" for="name">Ім’я*</label>
 									<input id="name" required type="text" name="name" data-error="error" placeholder="Введіть ім'я" class="input">
 								</div>
 								<div class="form__item">
-									<label class="form__label" for="tel">Номер телефону* </label>
-									<input id="tel" required type="tel" name="tel" data-error="error" placeholder="Введіть номер телефону" maxlength="20" class="input">
+									<label class="form__label" for="phone">Номер телефону* </label>
+									<input id="phone" required type="tel" name="tel" data-error="error" maxlength="20" class="input">
 								</div>
 								<div class="form__item">
 									<label class="form__label" for="email">E-mail</label>
@@ -252,6 +254,24 @@
 			</footer>
 		</div>
 		<script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+
 		<script src="js/script.js"></script>
+
+		<script src="js/intlTelInput.js"></script>
+		<script>
+  			var input = document.querySelector("#phone");
+ 			 window.intlTelInput(input, {
+				 initialCountry: 'auto',
+				 geoIpLookup: function(callback) {
+    			$.get('https://ipinfo.io', function() {}, "jsonp").always(function(resp) {
+      		var countryCode = (resp && resp.country) ? resp.country : "us";
+      		callback(countryCode);
+    				});
+  				},
+				nationalMode: true,
+				separateDialCode:true,
+				utilsScript: 'js/utils.js?1638200991544',
+  			});
+		</script>
 	</body>
 </html>

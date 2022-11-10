@@ -7,3 +7,4 @@ new Swiper('.swiper', {
 	interval: 4000,
 	swipe: true
 });
+
