@@ -352,11 +352,34 @@ body {
 .jaguar__image {
 	max-width: 500px;
 	max-height: 700px;
+	position: relative;
 }
 .jaguar__image img{
 	max-width: 100%;
 	border-radius: 10px;
 }
+.jaguar__image picture:nth-child(1){
+	position: relative;
+	z-index: 44;
+	animation: img 20s infinite  steps(2);
+}
+.jaguar__image picture:nth-child(2){
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	z-index: 43;
+}
+@keyframes img{
+	0%{
+		
+	}
+	100%{
+		z-index: 0;
+	}
+}
+
+
 @keyframes pulse {
 	0% {
 		
